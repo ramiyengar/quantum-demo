@@ -1,0 +1,4 @@
+openssl list -signature-algorithms -provider oqsprovider
+openssl list -kem-algorithms -provider oqsprovider
+openssl req -x509 -new -newkey mldsa65 -keyout qsc.key -out qsc.crt -nodes -subj "/CN=oqstest" -days 365
+
